@@ -8,6 +8,7 @@ import java.util.concurrent.Executors;
 //数据模型层全局类
 public class Model {
     private Context mContext;
+    private ExecutorService executorService = Executors.newCachedThreadPool();//线程池
     //创建对象
     private static Model model = new Model();
 
@@ -25,5 +26,10 @@ public class Model {
     public void init(Context context){
         mContext = context;
 
+    }
+
+    //定义全局线程池
+    public ExecutorService getGlobalThreadPool(){
+        return executorService;
     }
 }

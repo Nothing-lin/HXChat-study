@@ -10,6 +10,7 @@ import android.os.Message;
 
 import com.hyphenate.chat.EMClient;
 import com.nothinglin.guiguchat.R;
+import com.nothinglin.guiguchat.model.Model;
 
 public class LaunchActivity extends AppCompatActivity {
 
@@ -26,7 +27,14 @@ public class LaunchActivity extends AppCompatActivity {
     };
 
     private void toMainOrLogin() {
-        new Thread(){
+//        new Thread(){
+//            @Override
+//            public void run() {
+//            }
+//        }.start();
+
+        //全局线程池的调用
+        Model.getInstance().getGlobalThreadPool().execute(new Runnable() {
             @Override
             public void run() {
                 //判断当前账号是否已经退出
@@ -46,7 +54,7 @@ public class LaunchActivity extends AppCompatActivity {
                 //结束启动页面
                 finish();
             }
-        }.start();
+        });
     }
 
     @Override
