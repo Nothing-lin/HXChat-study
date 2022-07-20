@@ -32,9 +32,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuiguChat"
         tools:targetApi="31">
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
         <!-- 项目的启动界面 -->
         <activity
             android:name=".controller.activity.LaunchActivity"

@@ -4,13 +4,18 @@ import android.app.Application;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+import com.nothinglin.guiguchat.model.Model;
 
 public class IMApplication extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
+
         initEasemob();
+
+        //初始化数据模型层类
+        Model.getInstance().init(this);
     }
 
     private void initEasemob(){
