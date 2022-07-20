@@ -26,6 +26,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    //    这里设置一下
+    sourceSets{
+        main{
+            //设计值jni so文件路径，如果有jniLibs目录就不需要设置，好像手动创建的jniLibs目录无效
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 
 }
 
