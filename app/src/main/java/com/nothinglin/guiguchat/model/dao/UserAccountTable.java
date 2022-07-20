@@ -11,7 +11,7 @@ public class UserAccountTable {
     public static final String COL_NICK = "nick";
     public static final String COL_PHOTO = "photo";
 
-    public static final String CREATE_TAB = "create table"
+    public static final String CREATE_TAB = "create table " //一个空格导致一个bug
             + TAB_NAME + " ("
             + COL_HXID + " text primary key,"
             + COL_NAME + " text,"
