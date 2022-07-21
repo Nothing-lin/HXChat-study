@@ -22,41 +22,20 @@
 
 
         <RadioButton
-            android:background="@drawable/main_bottom_bg_selector"
-            android:textColor="@color/main_bottom_textcolor_selector"
-            android:gravity="center"
-            android:button="@null"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="会话"
-            android:textSize="20sp">
+            style="@style/MainButtonStyle">
 
         </RadioButton>
 
         <RadioButton
-            android:background="@drawable/main_bottom_bg_selector"
-            android:textColor="@color/main_bottom_textcolor_selector"
-            android:gravity="center"
-            android:button="@null"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="联系人"
-            android:textSize="20sp">
+            style="@style/MainButtonStyle"
+            android:text="联系人">
 
         </RadioButton>
 
         <RadioButton
-            android:background="@drawable/main_bottom_bg_selector"
-            android:textColor="@color/main_bottom_textcolor_selector"
-            android:gravity="center"
-            android:button="@null"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="设置"
-            android:textSize="20sp">
+            style="@style/MainButtonStyle"
+            android:text="设置">
 
         </RadioButton>
 
